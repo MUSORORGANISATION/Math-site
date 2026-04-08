@@ -1,0 +1,89 @@
+:root {
+    --ink: #1A1209;
+    --normal: #F7F0E3;
+    --aged: #EDE3CE;
+    --river: #2A5F8F;
+    --bronze: #8B5E1A;
+    --gold: #C49A2E;
+    --rust: #A0391C;
+    --taiga: #2D5016;
+    --fog: #C4B99A;
+    --deep: #0D2030;
+    --cream: #FBF7EF;
+    --reed: #6B4C11;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    bacrground-color: var(--cream);
+    color: var(--ink);
+}
+
+nav, .logo {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    height: 64px;
+    background-color: var(--ink);
+    border-bottom: 5px solid var(--gold);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    color: var(--normal);
+    gap: 8px;
+}
+
+.nav-links {
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: center;
+}
+
+.logo-divider {
+    border-left: 1px solid var(--bronze);
+    height: 40px;
+}
+
+.logo-desc {
+    color: var(--bronze)
+}
+
+.logo-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.nav-link {
+    color: #666;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--bronze);
+    text-decoration: none;
+}
+.nav-link:active {
+    color: var(--reed);
+    text-decoration: none;
+}
+
+.hero {
+    background-color: var(--ink);
+    color: var(--cream);
+}
+
+.hero img {
+    width: 30%;
+}
