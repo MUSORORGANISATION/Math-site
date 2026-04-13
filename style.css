@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
-    bacrground-color: var(--cream);
+    background-color: var(--cream);
     color: var(--ink);
 }
 
@@ -86,4 +86,25 @@ nav {
 
 .hero img {
     width: 30%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: end;
+    padding: 6px;
+    height: 64px;
+    background-color: var(--ink);
+    border-top: 1px solid var(--bronze);
+}
+
+.f-logo {
+    color: var(--bronze);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+.f-copy {
+    color: #666;
+    font-size: 12px;
 }
