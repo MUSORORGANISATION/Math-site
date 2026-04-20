@@ -11,6 +11,7 @@
     --deep: #0D2030;
     --cream: #FBF7EF;
     --reed: #6B4C11;
+    --deep-lighter: #0d2b44;
 }
 
 body {
@@ -19,9 +20,11 @@ body {
     font-family: "Raleway", sans-serif;
     background-color: var(--cream);
     color: var(--ink);
+    overflow-x: hidden;
 }
 
-nav, .logo {
+nav,
+.logo {
     display: flex;
     flex-direction: row;
 }
@@ -70,10 +73,12 @@ nav {
     color: #666;
     text-decoration: none;
 }
+
 .nav-link:hover {
     color: var(--bronze);
     text-decoration: none;
 }
+
 .nav-link:active {
     color: var(--reed);
     text-decoration: none;
@@ -87,30 +92,36 @@ nav {
     color: var(--cream);
     height: 800px;
 }
+
 .hero-img {
     grid-row: 1/4;
     grid-column: 2/3;
 }
+
 .hero-main {
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding: 15px;
+    padding-left: 95px;
     grid-row: 1/2;
     grid-column: 1/2;
 }
+
 .hero-stat {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding-left: 90px;
     gap: 20px;
     grid-row: 2/3;
     grid-column: 1/2;
 }
+
 .hero-button {
     grid-row: 3/4;
     grid-column: 1/2;
+    padding-left: 90px
 }
+
 .comment-thing {
     display: flex;
     flex-direction: row;
@@ -119,35 +130,69 @@ nav {
     text-transform: uppercase;
     font-size: 14px;
 }
+
 .hero-at {
     border: 1px solid var(--bronze);
     width: 40px
 }
+
 .hero-comment {
     color: var(--bronze);
     letter-spacing: 5px;
 }
+
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     letter-spacing: 4px;
     color: var(--normal);
 }
+
 .art {
     color: var(--gold);
     font-style: italic;
 }
+
 .hero-title,
 .art {
     font-size: 80px;
 }
-.hero-div1 {
+
+.hero-img-div {
     background-image: url("assests/Irtish-ovchinikov.png");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
+    border-left: 1px solid var(--bronze);
+    display: flex;
+    align-items: end;
 }
+
+.hero-img-span {
+    background-color: var(--ink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid var(--bronze);
+    flex-direction: column;
+}
+
+.img-span-name {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.img-span-artist {
+    color: var(--fog);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+}
+
 .title-comment {
     width: 50%;
     color: #888;
@@ -155,17 +200,402 @@ nav {
     font-size: 16px;
     font-style: italic;
 }
+
 .stat-div {
     display: flex;
     flex-direction: column;
 }
+
 .stat-num {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     color: var(--gold);
 }
+
 .stat-desc {
     color: var(--fog);
+}
+
+.button-collection {
+    border: 1px solid var(--gold);
+    background-color: transparent;
+    color: var(--gold);
+    font-size: 16px;
+    width: 70%;
+    letter-spacing: 4px;
+    height: 60px;
+    transition: all 0.4s ease;
+}
+
+.button-collection:hover {
+    background-color: var(--gold);
+    color: var(--ink);
+    transition: all 0.4s ease;
+}
+
+.ticker {
+    background: var(--gold);
+    height: 42px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ticker-track {
+    display: flex;
+    animation: tickerRoll 20s linear infinite;
+    gap: 80px;
+    white-space: nowrap;
+}
+
+.ticker-item {
+    color: var(--ink);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@keyframes tickerRoll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.collection-hero {
+    background-color: var(--ink);
+    color: var(--cream);
+    padding-left: 200px;
+    padding-top: 60px;
+    height: 270px
+}
+
+.collection-title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    line-height: 0.7;
+    letter-spacing: 4px;
+    color: var(--normal);
+}
+
+.col-title-gold {
+    font-family: 'EB Garamond', serif;
+    color: var(--gold);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.collection-content {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    background-color: var(--ink);
+    height: 80%;
+}
+
+.collection-grid {
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.collection-description {
+    background-color: var(--aged);
+    color: var(--deep);
+    grid-column: 2/3;
+    padding: 40px;
+}
+.col-at {
+    border-bottom: 2px solid var(--reed);
+    width: 35px;
+    padding-top: 10px;
+    height: 0;
+}
+.col-span-about {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+.collection-about {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 0.7
+}
+.collection-quote {
+    padding-left: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    border-left: 4px solid var(--gold);
+    font-style: italic;
+}
+p {
+    color: #888;
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.col-about-grid {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.col-grid-item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.col-grid-item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.col-grid-item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.col-grid-item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.col-grid-item1,
+.col-grid-item2,
+.col-grid-item3,
+.col-grid-item4 {
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--fog);
+}
+.item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--deep);
+}
+.item-text {
+    color: #888;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+}
+
+.col-comment {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    color: var(--reed);
+    padding: 40px;
+}
+
+.collection-item1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.collection-item2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.collection-item3 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.collection-item4 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.collection-item1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bronze);
+}
+
+.collection-item2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bronze);
+}
+
+.collection-item3 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bronze);
+}
+
+.collection-item4 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bronze);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+.overlay:hover {
+    opacity: 0.8;
+}
+
+.about-full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-left {
+    background-color: var(--deep);
+    height: 100%
+}
+
+.text-article {
+    padding: 60px;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 50px;
+}
+
+.authors {
+    color: var(--gold);
+}
+.authors-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 0.7;
+    letter-spacing: 4px;
+    color: var(--normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.authors-gold {
+    font-family: 'EB Garamond', serif;
+    color: var(--gold);
+    font-style: italic;
+    font-weight: bold;
+}
+.authors-desc {
+    color: #888;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 50%;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid var(--bronze);
+    height: 100px;
+}
+.person-desc {
+    display: flex;
+    flex-direction: column;
+}
+.initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gold);
+    height: 40px;
+    width: 40px;
+    color: var(--gold);
+    background-color: var(--deep-lighter)
+}
+
+.person-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: var(--normal);
+    line-height: 1.5;
+}
+
+.person-role {
+    color: var(--gold);
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.person-work {
+    color: #888;
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--aged);
+    padding-left: 60px;
+
+}
+
+.work-done {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.work-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 0.7;
+}
+
+.work-desc {
+    color: var(--reed);
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
 }
 
 footer {
@@ -177,13 +607,15 @@ footer {
     height: 64px;
     background-color: var(--ink);
     border-top: 1px solid var(--bronze);
-}
+    }
+
 .f-logo {
     color: var(--bronze);
     font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
-}
+    }
+
 .f-copy {
     color: #666;
     font-size: 12px;
-}
+    }
