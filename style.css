@@ -619,3 +619,768 @@ footer {
     color: #666;
     font-size: 12px;
     }
+/* =====================
+   О ПРОЕКТЕ
+   ===================== */
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    background-color: var(--cream);
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 80px 60px 80px 95px;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--ink);
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.intro-accent {
+    color: var(--bronze);
+    font-style: italic;
+}
+
+.intro-text {
+    color: #555;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+    width: 85%;
+}
+
+.intro-stats-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--fog);
+}
+
+.intro-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: var(--bronze);
+    line-height: 1.1;
+}
+
+.intro-stat-label {
+    color: var(--ink);
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.intro-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-left: 1px solid var(--bronze);
+}
+
+.intro-img-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 18, 9, 0.80);
+    padding: 10px 18px;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-style: italic;
+    border-top: 1px solid var(--bronze);
+}
+
+/* =====================
+   ВИДЫ ИСКУССТВА
+   ===================== */
+.categories-section {
+    background-color: var(--deep);
+    padding: 80px 95px;
+    color: var(--cream);
+}
+
+.categories-header {
+    margin-bottom: 48px;
+}
+
+.categories-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--normal);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.cat-gold {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--bronze);
+    border: 1px solid var(--bronze);
+}
+
+.cat-card {
+    background-color: var(--deep);
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: background-color 0.35s ease;
+}
+
+.cat-card:hover {
+    background-color: var(--deep-lighter);
+}
+
+.cat-num {
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.cat-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--normal);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.cat-card-text {
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* =====================
+   ИЗБРАННЫЕ РАБОТЫ
+   ===================== */
+.featured-section {
+    background-color: var(--ink);
+    padding: 80px 95px;
+}
+
+.featured-header {
+    margin-bottom: 40px;
+}
+
+.featured-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--normal);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.feat-gold {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 4px;
+    height: 480px;
+}
+
+.feat-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.feat-item {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.feat-tall {
+    height: 100%;
+}
+
+.feat-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--bronze);
+    transition: transform 0.5s ease;
+}
+
+.feat-item:hover img {
+    transform: scale(1.04);
+}
+
+.feat-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(13, 32, 48, 0.92));
+    padding: 24px 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+}
+
+.feat-item:hover .feat-caption {
+    transform: translateY(0);
+}
+
+.feat-caption-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--gold);
+}
+
+.feat-caption-sub {
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    color: var(--fog);
+    font-style: italic;
+}
+
+.featured-cta {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.feat-btn {
+    width: 420px !important;
+}
+
+/* =====================
+   ХРОНОЛОГИЯ (галерея)
+   ===================== */
+.timeline-section {
+    background-color: var(--aged);
+    padding: 80px 95px;
+    color: var(--ink);
+}
+
+.timeline-header {
+    margin-bottom: 52px;
+}
+
+.timeline-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--ink);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.tl-gold {
+    color: var(--bronze);
+    font-style: italic;
+}
+
+.timeline-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--bronze);
+    border: 1px solid var(--bronze);
+}
+
+.tl-item {
+    background-color: var(--aged);
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.tl-item:hover {
+    background-color: var(--normal);
+}
+
+.tl-period {
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    color: var(--bronze);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.tl-line {
+    border-top: 2px solid var(--gold);
+    width: 40px;
+}
+
+.tl-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.tl-item p {
+    color: #666;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =====================
+   ЭКСПОНАТЫ (галерея)
+   ===================== */
+.spotlight-section {
+    background-color: var(--ink);
+    padding: 80px 95px;
+    color: var(--cream);
+}
+
+.spotlight-header {
+    margin-bottom: 48px;
+}
+
+.spotlight-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--normal);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.sp-gold {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background-color: var(--bronze);
+    border: 1px solid var(--bronze);
+}
+
+.sp-card {
+    background-color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.sp-card:hover {
+    background-color: var(--deep-lighter);
+}
+
+.sp-img-wrap {
+    height: 240px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--bronze);
+}
+
+.sp-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.sp-card:hover .sp-img-wrap img {
+    transform: scale(1.05);
+}
+
+.sp-info {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.sp-tag {
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.sp-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--normal);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.sp-info p {
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sp-meta {
+    color: var(--bronze);
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--deep-lighter);
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+/* =====================
+   НАРОДЫ РЕГИОНА (вкладки)
+   ===================== */
+.peoples-section {
+    background-color: var(--ink);
+    padding: 80px 95px 0;
+    color: var(--cream);
+}
+
+.peoples-header {
+    margin-bottom: 40px;
+}
+
+.peoples-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--normal);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.ppl-gold {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid var(--bronze);
+    gap: 0;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    padding: 14px 36px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+    color: var(--normal);
+}
+
+.tab-btn.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+}
+
+.tab-content {
+    padding: 0;
+}
+
+.tab-panel {
+    display: none;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    padding: 52px 0 72px;
+}
+
+.tab-panel.active {
+    display: grid;
+}
+
+.panel-text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.panel-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: var(--normal);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.panel-desc {
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.panel-tags-wrap {
+    margin-top: 8px;
+}
+
+.panel-tag-label {
+    display: block;
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin-bottom: 12px;
+}
+
+.panel-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ptag {
+    border: 1px solid var(--bronze);
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    padding: 5px 14px;
+    letter-spacing: 1px;
+}
+
+.panel-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-left: 1px solid var(--bronze);
+    padding-left: 48px;
+}
+
+.panel-fact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pfact-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.pfact-label {
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.panel-quote {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--normal);
+    border-left: 3px solid var(--gold);
+    padding-left: 16px;
+    margin: 8px 0 0 0;
+    line-height: 1.6;
+}
+
+/* =====================
+   СЧЁТЧИКИ
+   ===================== */
+.counters-section {
+    background-color: var(--aged);
+    padding: 80px 95px;
+}
+
+.counters-label {
+    margin-bottom: 48px;
+}
+
+.counters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--bronze);
+    border: 1px solid var(--bronze);
+}
+
+.counter-item {
+    background-color: var(--aged);
+    padding: 48px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.counter-item:hover {
+    background-color: var(--normal);
+}
+
+.counter-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: var(--bronze);
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.counter-desc {
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    color: var(--reed);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* =====================
+   АККОРДЕОН FAQ
+   ===================== */
+.faq-section {
+    background-color: var(--deep);
+    padding: 80px 95px;
+    color: var(--cream);
+}
+
+.faq-header {
+    margin-bottom: 48px;
+}
+
+.faq-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: var(--normal);
+    letter-spacing: 2px;
+    margin: 12px 0 0 0;
+    line-height: 1.1;
+}
+
+.faq-gold {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--bronze);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--bronze);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--normal);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    padding: 28px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: var(--gold);
+}
+
+.faq-item.active .faq-question {
+    color: var(--gold);
+}
+
+.faq-icon {
+    font-size: 28px;
+    color: var(--gold);
+    transition: transform 0.35s ease;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-text {
+    color: var(--fog);
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0 0 28px 0;
+    width: 75%;
+}

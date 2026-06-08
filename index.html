@@ -81,9 +81,337 @@
             <span class="ticker-item">· Современная живопись Хмао</span>
         </div>
     </section>
+    <!-- О ПРОЕКТЕ -->
+    <section class="intro-section">
+        <article class="intro-left">
+            <div class="comment-thing">
+                <div class="hero-at"></div>
+                <span class="hero-comment">О проекте</span>
+            </div>
+            <h2 class="intro-title">Четыре века<br><span class="intro-accent">речной культуры</span></h2>
+            <p class="intro-text">Проект «Обь–Иртыш» посвящён художественному наследию народов Обь-Иртышского бассейна — ханты, манси, ненцев, сибирских татар и русских переселенцев. Мы собрали произведения живописи, скульптуры, орнаментального и прикладного искусства с XVII по XXI век, чтобы показать: великие реки — это не только водные пути, но и оси целых цивилизаций.</p>
+            <div class="intro-stats-row">
+                <div class="intro-stat">
+                    <span class="intro-stat-num">1840</span>
+                    <span class="intro-stat-label">Произведений</span>
+                </div>
+                <div class="intro-stat">
+                    <span class="intro-stat-num">5+</span>
+                    <span class="intro-stat-label">Этносов</span>
+                </div>
+                <div class="intro-stat">
+                    <span class="intro-stat-num">XVII–XXI</span>
+                    <span class="intro-stat-label">Века</span>
+                </div>
+            </div>
+        </article>
+        <article class="intro-right">
+            <img src="assests/image.png" alt="Западная Сибирь">
+            <div class="intro-img-caption">
+                <span>Западная Сибирь · Обь-Иртышский бассейн</span>
+            </div>
+        </article>
+    </section>
+
+    <!-- ВИДЫ ИСКУССТВА -->
+    <section class="categories-section">
+        <div class="categories-header">
+            <div class="comment-thing">
+                <div class="hero-at"></div>
+                <span class="hero-comment">Виды искусства</span>
+            </div>
+            <h2 class="categories-title">Что входит в<br><span class="cat-gold">коллекцию</span></h2>
+        </div>
+        <div class="categories-grid">
+            <div class="cat-card">
+                <span class="cat-num">01</span>
+                <h3 class="cat-card-title">Живопись и графика</h3>
+                <span class="cat-card-text">Пейзажи сибирских рек, портреты коренных народов и жанровые сцены XIX–XXI веков кисти омских, тюменских и югорских художников.</span>
+            </div>
+            <div class="cat-card">
+                <span class="cat-num">02</span>
+                <h3 class="cat-card-title">Орнаментальное искусство</h3>
+                <span class="cat-card-text">Традиционная вышивка ханты и манси, ненецкие орнаменты — геометрические и зооморфные мотивы, передававшиеся из поколения в поколение.</span>
+            </div>
+            <div class="cat-card">
+                <span class="cat-num">03</span>
+                <h3 class="cat-card-title">Скульптура и резьба</h3>
+                <span class="cat-card-text">Деревянная и костяная пластика народов Ямала и Югры: идолы, бытовые предметы и украшения, несущие сакральный смысл.</span>
+            </div>
+            <div class="cat-card">
+                <span class="cat-num">04</span>
+                <h3 class="cat-card-title">Берёстяное искусство</h3>
+                <span class="cat-card-text">Туеса, коробы и украшения из бересты, меховые аппликации — уникальные техники, сложившиеся в условиях сибирского климата.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИЗБРАННЫЕ РАБОТЫ -->
+    <section class="featured-section">
+        <div class="featured-header">
+            <div class="comment-thing">
+                <div class="hero-at"></div>
+                <span class="hero-comment">Избранные работы</span>
+            </div>
+            <h2 class="featured-title">Из <span class="feat-gold">коллекции</span></h2>
+        </div>
+        <div class="featured-grid">
+            <div class="feat-item feat-tall">
+                <img src="assests/Traditional_emb.png" alt="Традиционная вышивка Ханты">
+                <div class="feat-caption">
+                    <span class="feat-caption-title">Традиционная вышивка Ханты</span>
+                    <span class="feat-caption-sub">Прикладное искусство · XVIII в.</span>
+                </div>
+            </div>
+            <div class="feat-col">
+                <div class="feat-item">
+                    <img src="assests/mansi.png" alt="Берёстяное искусство манси">
+                    <div class="feat-caption">
+                        <span class="feat-caption-title">Берёстяное искусство манси</span>
+                        <span class="feat-caption-sub">Прикладное искусство</span>
+                    </div>
+                </div>
+                <div class="feat-item">
+                    <img src="assests/Waterstay.png" alt="Водостояние на Иртыше">
+                    <div class="feat-caption">
+                        <span class="feat-caption-title">Водостояние на Иртыше</span>
+                        <span class="feat-caption-sub">Живопись · XX в.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-cta">
+            <button onclick="window.location.href='collection.html';" class="button-collection feat-btn">Перейти к полной галерее</button>
+        </div>
+    </section>
+
+    <!-- НАРОДЫ РЕГИОНА (интерактивные вкладки) -->
+    <section class="peoples-section">
+        <div class="peoples-header">
+            <div class="comment-thing">
+                <div class="hero-at"></div>
+                <span class="hero-comment">Народы региона</span>
+            </div>
+            <h2 class="peoples-title">Чьё искусство <span class="ppl-gold">мы храним</span></h2>
+        </div>
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="khanty">Ханты</button>
+            <button class="tab-btn" data-tab="mansi">Манси</button>
+            <button class="tab-btn" data-tab="nenets">Ненцы</button>
+            <button class="tab-btn" data-tab="tatars">Сибирские татары</button>
+        </div>
+        <div class="tab-content">
+            <div class="tab-panel active" id="khanty">
+                <div class="panel-text">
+                    <h3 class="panel-name">Ханты</h3>
+                    <p class="panel-desc">Один из коренных народов Западной Сибири, населяющий бассейн Оби и её притоков. Традиционно занимались охотой, рыболовством и оленеводством в условиях тайги и лесотундры.</p>
+                    <p class="panel-desc">Художественная традиция ханты — одна из богатейших в регионе. Орнамент являлся не только украшением, но и сложным кодом: каждый мотив сообщал о роде, поле, возрасте и статусе владельца.</p>
+                    <div class="panel-tags-wrap">
+                        <span class="panel-tag-label">Искусство</span>
+                        <div class="panel-tags">
+                            <span class="ptag">Вышивка бисером</span>
+                            <span class="ptag">Меховая мозаика</span>
+                            <span class="ptag">Резьба по дереву</span>
+                            <span class="ptag">Плетение</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-facts">
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">31 000</span>
+                        <span class="pfact-label">человек сегодня</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">~600</span>
+                        <span class="pfact-label">орнаментальных мотивов</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">XVII в.</span>
+                        <span class="pfact-label">первые фиксации</span>
+                    </div>
+                    <blockquote class="panel-quote">«Каждый узор — это слово. Каждый орнамент — фраза на языке старше письменности.»</blockquote>
+                </div>
+            </div>
+            <div class="tab-panel" id="mansi">
+                <div class="panel-text">
+                    <h3 class="panel-name">Манси</h3>
+                    <p class="panel-desc">Угорский народ Западной Сибири, ближайшие родственники ханты. Населяли берега Оби, Северной Сосьвы и Пелыма. Мифология манси сложна и развита — богатый пантеон богов нашёл отражение в искусстве.</p>
+                    <p class="panel-desc">Особое место занимает берёстяное искусство: туеса, короба и декоративные изделия покрывались орнаментами-оберегами. Техника тиснения по бересте достигла у манси высочайшего уровня.</p>
+                    <div class="panel-tags-wrap">
+                        <span class="panel-tag-label">Искусство</span>
+                        <div class="panel-tags">
+                            <span class="ptag">Берёстяные изделия</span>
+                            <span class="ptag">Тиснение</span>
+                            <span class="ptag">Деревянная скульптура</span>
+                            <span class="ptag">Орнамент на ткани</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-facts">
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">12 000</span>
+                        <span class="pfact-label">человек сегодня</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">2</span>
+                        <span class="pfact-label">диалектные группы</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">XVIII в.</span>
+                        <span class="pfact-label">расцвет берёстяного мастерства</span>
+                    </div>
+                    <blockquote class="panel-quote">«Береста для манси — то же, что холст для европейца. Материал, несущий смысл.»</blockquote>
+                </div>
+            </div>
+            <div class="tab-panel" id="nenets">
+                <div class="panel-text">
+                    <h3 class="panel-name">Ненцы</h3>
+                    <p class="panel-desc">Самый многочисленный коренной народ Российской Арктики. Ненцы освоили тундру от Кольского полуострова до Ямала. Традиционный уклад — кочевое оленеводство — определил и характер их искусства.</p>
+                    <p class="panel-desc">Прикладное искусство ненцев отличается строгостью форм и функциональностью. Меховые изделия — малицы, ягушки, кисы — украшались геометрическим орнаментом, каждый элемент которого нёс обереговый смысл.</p>
+                    <div class="panel-tags-wrap">
+                        <span class="panel-tag-label">Искусство</span>
+                        <div class="panel-tags">
+                            <span class="ptag">Меховая аппликация</span>
+                            <span class="ptag">Резьба по кости</span>
+                            <span class="ptag">Плетение из кожи</span>
+                            <span class="ptag">Украшения</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-facts">
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">49 000</span>
+                        <span class="pfact-label">человек сегодня</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">300+</span>
+                        <span class="pfact-label">геометрических мотивов</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">Ямал</span>
+                        <span class="pfact-label">главный регион</span>
+                    </div>
+                    <blockquote class="panel-quote">«Тундра молчит. Орнамент говорит за неё — о ветре, о звере, о духе.»</blockquote>
+                </div>
+            </div>
+            <div class="tab-panel" id="tatars">
+                <div class="panel-text">
+                    <h3 class="panel-name">Сибирские татары</h3>
+                    <p class="panel-desc">Тюркоязычный народ Западной Сибири, потомки населения Сибирского ханства. Расселены вдоль Иртыша и Тобола. Культура сибирских татар вобрала в себя как исламские традиции, так и местные сибирские влияния.</p>
+                    <p class="panel-desc">Искусство отличается богатством растительного орнамента и развитым ювелирным ремеслом. В XIX–XX веках сложилась самобытная школа живописи и графики на темы быта и природы Иртышья.</p>
+                    <div class="panel-tags-wrap">
+                        <span class="panel-tag-label">Искусство</span>
+                        <div class="panel-tags">
+                            <span class="ptag">Ювелирное ремесло</span>
+                            <span class="ptag">Ткачество</span>
+                            <span class="ptag">Растительный орнамент</span>
+                            <span class="ptag">Живопись</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-facts">
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">~6 000</span>
+                        <span class="pfact-label">человек сегодня</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">XV в.</span>
+                        <span class="pfact-label">Сибирское ханство</span>
+                    </div>
+                    <div class="panel-fact-item">
+                        <span class="pfact-num">Иртыш</span>
+                        <span class="pfact-label">ось культуры</span>
+                    </div>
+                    <blockquote class="panel-quote">«Иртыш — не граница между народами, а нить, их связующая.»</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОПРОСЫ (аккордеон) -->
+    <section class="faq-section">
+        <div class="faq-header">
+            <div class="comment-thing">
+                <div class="hero-at"></div>
+                <span class="hero-comment">Вопросы и ответы</span>
+            </div>
+            <h2 class="faq-title">О коллекции <span class="faq-gold">подробнее</span></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Откуда взялась коллекция?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-text">Материалы для проекта собирались из открытых архивов, музейных фондов и научных публикаций. Использовались коллекции Омского областного музея изобразительных искусств, Ханты-Мансийского музея природы и человека, а также оцифрованные фонды Российской государственной библиотеки.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Можно ли увидеть оригиналы?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-text">Большинство оригинальных произведений хранится в региональных музеях Западной Сибири. Живопись Овчинникова и других омских художников представлена в постоянной экспозиции Омского музея изобразительных искусств им. М.А. Врубеля. Предметы прикладного искусства ханты и манси — в музее г. Ханты-Мансийска.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Что значит «Обь-Иртыш» в названии?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-text">Обь и Иртыш — две крупнейшие реки Западной Сибири, образующие единую речную систему. Исторически именно по их берегам концентрировалось население региона. Художники, ремесленники и мастера народного искусства жили и творили в долинах этих рек, поэтому «Обь-Иртыш» — это и географическая привязка, и символ единства культурного пространства.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Чем отличаются орнаменты разных народов?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-text">Орнаменты ханты и манси строятся на геометрических и зооморфных мотивах — оленьи рога, медвежья лапа, лягушка. Ненецкие орнаменты более строгие и графичные, с преобладанием ромбов и полос. Сибирско-татарский орнамент испытал влияние ислама — растительные, цветочные мотивы, арабесковые завитки. На практике традиции нередко переплетались через торговлю и смешанные браки.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Живы ли эти традиции сегодня?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-text">Да, хотя и в изменённом виде. В ХМАО и ЯНАО работают мастерские и культурные центры, где передаётся орнаментальное искусство ханты и манси. Молодые художники переосмысливают традиционные мотивы в современных техниках — графике, цифровом искусстве, дизайне. Международные программы ЮНЕСКО поддерживают сохранение нематериального наследия коренных народов Сибири.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <span class="f-logo">Обь-Иртыш</span>
         <span class="f-copy">Групповой проект · Искусство Западной Сибири</span>
     </footer>
+
+    <script>
+        // === ВКЛАДКИ (Народы региона) ===
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tab = btn.dataset.tab;
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(tab).classList.add('active');
+            });
+        });
+
+        // === АККОРДЕОН (FAQ) ===
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
